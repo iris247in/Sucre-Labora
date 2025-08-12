@@ -1,125 +1,67 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: #222;
-  background: #f8f9fa;
-}
-header {
-  background: #0055a5;
-  color: #fff;
-  padding: 1rem 0;
-}
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-}
-nav {
-  float: right;
-}
-nav a {
-  color: #fff;
-  margin-left: 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s;
-}
-nav a:hover {
-  color: #ffd700;
-}
-.hero {
-  background: linear-gradient(90deg, #0055a5 65%, #ffd700 100%);
-  color: #fff;
-  padding: 3rem 0 2rem 0;
-  text-align: center;
-}
-.hero .btn {
-  background: #ffd700;
-  color: #0055a5;
-  padding: 0.8rem 2rem;
-  border: none;
-  border-radius: 25px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-.hero .btn:hover {
-  background: #fff56a;
-}
-.servicios {
-  padding: 2rem 0;
-  background: #fff;
-}
-.servicios-lista {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
-}
-.servicio {
-  background: #f0f3fb;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,85,165,0.05);
-  padding: 1.5rem;
-  width: 270px;
-  text-align: center;
-}
-.servicio h3 {
-  color: #0055a5;
-}
-.contacto {
-  padding: 2rem 0;
-  background: #f8f9fa;
-}
-.contacto a {
-  color: #0055a5;
-  text-decoration: underline;
-}
-form {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 400px;
-}
-input, textarea {
-  padding: 0.7rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-button[type="submit"] {
-  background: #0055a5;
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  padding: 0.7rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-button[type="submit"]:hover {
-  background: #003c73;
-}
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-@media (max-width: 800px) {
-  .servicios-lista {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav {
-    float: none;
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sucre-Labora | Microtrabajos y Oportunidades</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Sucre-Labora</h1>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Conecta talento con oportunidades</h2>
+      <p>Tu plataforma de microtrabajos y servicios freelance. Encuentra tareas, ofrece tus habilidades y haz crecer tu negocio.</p>
+      <a href="#contacto" class="btn">¡Contáctanos!</a>
+    </div>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <h2>¿Qué ofrecemos?</h2>
+      <div class="servicios-lista">
+        <div class="servicio">
+          <h3>Microtrabajos</h3>
+          <p>Realiza tareas rápidas, sencillas y gana dinero extra.</p>
+        </div>
+        <div class="servicio">
+          <h3>Freelance</h3>
+          <p>Ofrece tus servicios profesionales y encuentra clientes fácilmente.</p>
+        </div>
+        <div class="servicio">
+          <h3>Empresas</h3>
+          <p>Publica tus necesidades y encuentra el talento perfecto para cada proyecto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas o quieres unirte? Escríbenos a <a href="mailto:info@sucre-labora.com">info@sucre-labora.com</a> o llena el formulario:</p>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Sucre-Labora. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
